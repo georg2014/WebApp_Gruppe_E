@@ -1,0 +1,12 @@
+.active {
+	color: red;
+}
+body {
+	color: white;
+	font-weigt: 900;
+	text-shadow: 2px 1px darkblue;
+}
+
+background {
+    opacity = 0.5;
+}
