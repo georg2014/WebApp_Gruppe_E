@@ -2,3 +2,7 @@ http://all-free-download.com/free-website-templates/free-templates-using-html-cs
 
 #Ein einfaches aber ausreichendes Git Tutorial:
 http://rogerdudler.github.io/git-guide/
+
+In meinem Branch ist alles etwas anders^^
+
+Hier stehen auch ganz andere Sachen drin als im master Branch :D
