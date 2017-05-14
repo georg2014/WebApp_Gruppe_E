@@ -1,2 +1,4 @@
 http://all-free-download.com/free-website-templates/free-templates-using-html-css-javascript.html
-#jetzt versuche ich mal einen Request zu starten ohne direkt alles rüber zu pushen
+
+#Ein einfaches aber ausreichendes Git Tutorial:
+http://rogerdudler.github.io/git-guide/
