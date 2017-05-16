@@ -1,12 +1,47 @@
 .active {
-	color: red;
-}
-body {
-	color: white;
-	font-weigt: 900;
-	text-shadow: 2px 1px darkblue;
+	color: grey;
 }
 
-background {
+body {
+	color: darkblue;
+	font-weigt: 1500;
+}
+
+.background {
     opacity = 0.5;
 }
+
+.tableDefault {
+	border: no;
+	wight: 25%;
+}
+
+//<!-- to have a nice background -->
+	http://stackoverflow.com/questions/10422949/css-background-opacity
+	
+	.bg{
+	  position: relative;
+	  z-index: 1;
+	}
+	
+	.bg::before {
+	  content: "";
+	  position: absolute;
+	  top: 0; 
+	  left: 0;
+	  width: 100%; 
+	  height: 100%;  
+	  opacity: .4; 
+	  z-index: -1;
+	  background:  url(https://blog.nxp.com/wp-content/uploads/2017/02/01_SmartMeterblog_illustration_generic_lsv1-2-960x425.jpg);
+	}
+	
+//<!-- algin at the bottom --> TODO
+	.ab {
+		color: darkblue;
+		font-weigt: 900;
+		position : absolute;
+	    bottom : 0;
+	    height : 40px;
+	    margin-top : 40px;
+	}
