@@ -3,7 +3,13 @@ $( document ).ready(function() {
 	$("#home").click(home);
 	$("#details1").click(details1);
 	$("#details2").click(details2);
-	v();//volt
+	function writeInoutInList(){//TODO
+		$("#output").append($("<output>").attr("n", $("#name").text()));
+	}
+	$(function(){
+		writeInoutInList();
+		v();//volt
+	})
 	//i();//id
 	//s();//stain
 	//a();//amper
@@ -23,14 +29,18 @@ function details2(){
 }
 
 //static data
-//http://stackoverflow.com/questions/18536726/javascript-to-display-the-current-date-and-time
+//function randomBetween(min, max){
+//	return min + (int)(Math.random() * ((max - min) + 1));
+//}
 function v(){//volt
 	/*
 	~ 0.1 Volt
 	 220 - 240 Volt 
 	*/
-    var volt = randomBetween(Min, Max)
-    document.getElementById("v").innerHTML = volt;
+	var min = 220;
+	var max = 240;
+	var volt = min + Math.round(Math.random() * ((max - min) + 1));
+	$("#output").insert(volt);
 }
 
 function i(){//id
@@ -43,8 +53,4 @@ function s(){//stain
 
 function a(){//amper
 	window.location.href = "./details2.html";
-}
-
-function randomBetween(Min, Max){
-	return Min + (int)(Math.random() * ((Max - Min) + 1));
 }

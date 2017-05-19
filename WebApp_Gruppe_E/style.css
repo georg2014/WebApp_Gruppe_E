@@ -7,13 +7,21 @@ body {
 	font-weigt: 1500;
 }
 
-.background {
-    opacity = 0.5;
-}
-
 .tableDefault {
 	border: no;
-	wight: 25%;
+	text-align: center;
+}
+
+.button {
+    background-color: darkblue;
+    color: white;
+    padding: 15px 32px;
+    margin: 4px 2px;
+}
+
+//to be done right! TODO
+.center{
+	text-algin: center;
 }
 
 //<!-- to have a nice background -->
