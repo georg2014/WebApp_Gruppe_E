@@ -1,12 +1,72 @@
-.active {
-	color: red;
-}
-body {
-	color: white;
-	font-weigt: 900;
-	text-shadow: 2px 1px darkblue;
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-background {
-    opacity = 0.5;
+header{
+	top: 0;
+	width: 100%;
+	padding: 20px;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+
+body {
+	border-collapse: collapse;
+	color: black;
+	align-content: center;
+	text-align: center;
+}
+
+footer{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	padding: 10px;
+	color: white;
+	background-color: black;
+	font-size: 1;
+	text-align: left;
+}
+
+nav{
+	color: white;
+	text-align: left;
+}
+
+.gallery {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery > div {
+	margin:0;
+	position: relative;
+  float: left;
+  padding: 20px;
+}
+
+.gallery > div:hover {
+	border: 1px solid #777;
+}
+
+
+form{
+	padding: 1em;
+	color: black;
+	background-color: white;
+	text-align: center;
+}
+
+table,th,td{
+	border-collapse: collapse;
+	border: 1px solid black;
+	padding: 20px;
+	color: black;
+	background-color: white;
+	text-align: center;
+
 }
