@@ -17,41 +17,39 @@
 		<h1>Smart Meter 2</h1>
 	</header>
 
-<nav>
-	<ul>
-	 <a href="index.html">Übersicht</a>
-	 <a href="">> Detailansicht</a>
-  </ul>
-</nav>
+	<nav>
+		<ul>
+			<a href="index.html">Übersicht</a>
+			<a href="">> Detailansicht</a>
+		</ul>
+	</nav>
 
-	<div>
+		<div class="imageBox">
 			<img src="Bilder von Smart Metern\Smart Meter 3.jpg" alt="" width="300" height="500">
-			<p>
-				Gerätekennung: <span id="gk">EN54651894</span>
+			<p id="imgtxt2">
+				Spannung: <span id="spannung"></span> <br />
+				Stromstärke: <span id="stromstärke"></span>
 			</p>
-			<p>
-				Max. Belastung: <span id="maxA">70</span>A
-			</p>
-			<p>
-				Spannung: <span id="spannung">  </span>
-			</p>
-			<p>
-				Stromstärke: <span id="stromstärke"> </span>
-			</p>
+		</div>
 
-	</div>
+		<p>
+			Gerätekennung: <span id="gk">EN54651894</span>
+		</p>
+		<p>
+			Max. Belastung: <span id="maxA">70</span>A
+		</p>
 
 	<form name="ablesen" onsubmit="submiter(); return false">
-	  Nutzerkennung: <input type="text" name="id">  Zählerstand: <input type="text" name="data">
+		Nutzerkennung: <input type="text" name="id">  Zählerstand: <input type="text" name="data">
 		<input type="submit" value="Submit">
 	</form>
 
 	<table id="ablesungen">
-  <tr>
-    <th>Nutzerkennung</th>
-    <th>Zählerstand</th>
-    <th>Datum</th>
-  </tr>
+		<tr>
+			<th>Nutzerkennung</th>
+			<th>Zählerstand</th>
+			<th>Datum</th>
+		</tr>
 	</table>
 
 	<footer>

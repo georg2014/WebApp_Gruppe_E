@@ -17,42 +17,40 @@
 		<h1>Smart Meter 1</h1>
 	</header>
 
-<nav>
-	<ul>
-	 <a href="index.html">Übersicht</a>
-   <a href="">> Detailansicht</a>
-  </ul>
-</nav>
+	<nav>
+		<ul>
+			<a href="index.html">Übersicht</a>
+			<a href="">> Detailansicht</a>
+		</ul>
+	</nav>
 
-		<div>
-				<img src="Bilder von Smart Metern\Smart Meter 1.jpg" alt="" width="300" height="500">
-				<p>
-					Gerätekennung: <span id="gk">RV32165245</span>
-				</p>
-				<p>
-					Max. Belastung: <span id= "maxA">89</span>A
-				</p>
-				<p>
-					Spannung: <span id="spannung">  </span>
-				</p>
-				<p>
-					Stromstärke: <span id="stromstärke"> </span>
-				</p>
-
+		<div class="imageBox">
+			<img src="Bilder von Smart Metern\Smart Meter 1.jpg" alt="" width="300" height="500">
+			<p id="imgtxt1">
+				Spannung: <span id="spannung">  </span> <br />
+				Stromstärke: <span id="stromstärke"> </span>
+			</p>
 		</div>
+		<p>
+			Gerätekennung: <span id="gk">RV32165245</span>
+		</p>
+		<p>
+			Max. Belastung: <span id= "maxA">89</span>A
+		</p>
 
-  <form name="ablesen" onsubmit="submiter(); return false">
-    Nutzerkennung: <input type="text" name="id">  Zählerstand: <input type="text" name="data">
-    <input type="submit" value="Submit">
-  </form>
 
-  <table id="ablesungen">
-  <tr>
-    <th>Nutzerkennung</th>
-    <th>Zählerstand</th>
-    <th>Datum</th>
-  </tr>
-  </table>
+	<form name="ablesen" onsubmit="submiter(); return false">
+		Nutzerkennung: <input type="text" name="id">  Zählerstand: <input type="text" name="data">
+		<input type="submit" value="Submit">
+	</form>
+
+	<table id="ablesungen">
+		<tr>
+			<th>Nutzerkennung</th>
+			<th>Zählerstand</th>
+			<th>Datum</th>
+		</tr>
+	</table>
 
 	<footer>
 		<p>Anwendungssysteme 1. Übungsaufgabe made by Leon, Jakob, Jonas and Georg (Gruppe E)</p>

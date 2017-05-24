@@ -4,8 +4,8 @@ $( document ).ready(function() {
 	var maxStromstärke = parseInt($("#maxA").text());
 	var gerätekennung = $("#gk").text();
 
-	var spannung = rand(220,240);
-	var stromstärke = rand(0,120);
+	var spannung = rand(220.0,240.0);
+	var stromstärke = rand(0.0,120.0);
 
 	$("#spannung").text(spannung);
 	$("#stromstärke").text(stromstärke);
@@ -33,28 +33,29 @@ function addrow(nk, zs){
 
 }
 
-	var maxRows = 10;
-	var rows = 0;
+var maxRows = 10;
+var rows = 0;
+
 function submiter(){
 	if(rows < maxRows){
-	rows += 1;
-	var nutzerkennung = document.forms["ablesen"]["id"].value;
-	var zählerstand = document.forms["ablesen"]["data"].value + " kWh";
+		rows += 1;
+		var nutzerkennung = document.forms["ablesen"]["id"].value;
+		var zählerstand = document.forms["ablesen"]["data"].value + " kWh";
 
-	if (nutzerkennung == "") {
-		alert("Geben Sie bitte eine Nutzerkennung ein");
-		return false;
+		if (nutzerkennung == "") {
+			alert("Geben Sie bitte eine Nutzerkennung ein");
+			return false;
+		}
+		if (zählerstand == " kWh") {
+			alert("Geben Sie bitte einen Zählerstand ein");
+			return false;
+		}
+		else{
+			addrow(nutzerkennung, zählerstand)
+		}
 	}
-	if (zählerstand == "") {
-		alert("Geben Sie bitte einen Zählerstand ein");
-		return false;
-	}
-	else{
-		addrow(nutzerkennung, zählerstand)
-	}
-}
 }
 
 function rand (min, max) {
-	return Math.floor(Math.random() * (max - min + 1)) + min;
+	return parseFloat((Math.random() * (max-min)) + min).toFixed(1);
 }
