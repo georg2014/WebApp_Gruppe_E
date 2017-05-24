@@ -1,0 +1,19 @@
+http://all-free-download.com/free-website-templates/free-templates-using-html-css-javascript.html
+
+Ein einfaches aber ausreichendes Git Tutorial:
+http://rogerdudler.github.io/git-guide/
+
+<div class="gallery">
+  <div>
+    <a target="" href="C:\Users\Jakob\OneDrive\Dokumente\Technische Universität Berlin\2. Semester WINF\Anwendungssysteme\Projekte\WebApp_Gruppe_E\detailedView1.html">
+      <img src="C:\Users\Jakob\OneDrive\Dokumente\Technische Universität Berlin\2. Semester WINF\Anwendungssysteme\Projekte\WebApp_Gruppe_E\Bilder von Smart Metern\Smart Meter 1 mini.jpg" alt="" width="125" height="200">
+    </a>
+    <div class="desc">Smart Meter User: Jakob, Leon</div>
+  </div>
+  <div>
+    <a target="" href="C:\Users\Jakob\OneDrive\Dokumente\Technische Universität Berlin\2. Semester WINF\Anwendungssysteme\Projekte\WebApp_Gruppe_E\detailedView2.html">
+      <img src="C:\Users\Jakob\OneDrive\Dokumente\Technische Universität Berlin\2. Semester WINF\Anwendungssysteme\Projekte\WebApp_Gruppe_E\Bilder von Smart Metern\Smart Meter 3 mini.jpg" alt="" width="125" height="200">
+    </a>
+    <div class="desc">Smart Meter User: Jonas, Georg</div>
+  </div>
+</div>
