@@ -9,6 +9,8 @@ $( document ).ready(function() {
 	//a = amper
 	var a = numberB(0, maxStrain+5);
 	$("#a").text(a);
+	//s = strain
+	$("#s").text(maxStrain);
 		/*
 		Sofern die Stromstärke oberhalb der zulässigen Maximalbelastung liegt, soll auf 
 		der Smart Meter-Detailseite eine Warnung angezeigt werden
@@ -18,8 +20,6 @@ $( document ).ready(function() {
 		if(a>maxStrain){
 			alert("Warnung die Stromstärke liegt oberhalb der zulässigen Maximalbelastung!");
 		}
-	//s = strain
-	$("#s").text(maxStrain);
 	/*input*/
 	//in = input name
 	//ik = input kWh
