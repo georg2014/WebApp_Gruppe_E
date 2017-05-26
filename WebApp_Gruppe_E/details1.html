@@ -13,40 +13,41 @@
 		<h1> Smart Meters </h1>
 		<h2 class="active"> Anwendungssysteme Übung 1 SS 2017</h2>
 		<!-- table where you can see the Smart Meter and go home -->
-			<table class=tableDefault style="width:30%">
+			<table class=tableDefault>
 				<tr><th>Navigation</th></tr>
 				<tr>
 					<td><input class="button" type="button" id="home" value="home"/></td>
 				</tr>
 				<!-- display: id volt amper and strain -->
 				<tr>
-					<td>id</td><td>volt</td><td>amper</td><td>stain</td>
+					<td>id</td><td>volt</td><td>amper</td><td>max strain</td>
 				</tr>
 				<tr>
-					<td><output id="i">	</output></td><td><output id="v">	</output></td>
-					<td><output id="a">	</output></td><td><output id="s">	</output></td>
+					<td><div id="i">	"AA12345678"</div></td><td><div id="v">	</div></td>
+					<td><div id="a">	</div></td><td><div id="s">	</div></td>
 				</tr>
 				<!-- display: img -->
 				<tr>
 					<td></td>
-						<td style="hight:40%">
-							<p>Smart Meter1</p>
-							<img src="./sm1.jpg" alt="Smart Meter1" height="20%" width="14%">
+						<td>
+							<p>Smart Meter 1</p>
+							<img alt="Smart Meter" src="./sm1.jpg" width="14%">
 						</td>
 				</tr>
 				<!-- display: option to typ in kWh -->
 				<tr>
-					<td>name: </td><td><input type="text" id=name></td>
-					<td>kWh: </td><td><input type="text" id=name></td>
+					<td>name: </td><td><input type="text" id=in></td>
+					<td>kWh: </td><td><input type="text" id=ik></td>
 				</tr>
 				<!-- display: typed in data -->
-				<tr>
+				<tr id="output">
 					<td>name</td><td>date</td><td>kWh</td><td></td>
 				</tr>
+				<tr id="output">
+					<!-- output -->
+				</tr>
 				<tr>
-					<td><output id="n">	</output></td>
-					<td><output id="d">	</output></td>
-					<td><output id="k">	</output></td>
+					<td><input class="button" type="button" id="add" value="add"/></td>
 				</tr>
 			</table>
 		</article>
