@@ -1,17 +1,19 @@
 
 $( document ).ready(function() {
 
+	//Übernimmt Werte aus dem HTML doc in dem das Script aufgerufen wurde
 	var maxStromstärke = parseInt($("#maxA").text());
 	var gerätekennung = $("#gk").text();
-	console.log($("#gk").text());
-	console.log($("#maxA").text());
 
+	//Werte werden im Bereich zufällig zugewiesen
 	var spannung = rand(220.0,240.0);
-	var stromstärke = rand(60.0,120.0);
+	var stromstärke = rand(50.0,100.0);
 
+	//Werte in HTML übertragen
 	$("#spannung").text(spannung);
 	$("#stromstärke").text(stromstärke);
 
+	//Vergleicht aktuellen Wert mit dem Maximum an Belastung
 	if(stromstärke>maxStromstärke+5){
 		alert("Die maximale Stromstärke wird überschritten!");
 	}
@@ -36,6 +38,7 @@ function addrow(nk, zs){
 
 }
 
+//Max Anzahl Zeilen, damit die Tabelle nicht über die Seite hinaus geht
 var maxRows = 10;
 var rows = 0;
 
@@ -44,8 +47,7 @@ function submiter(){
 	if(rows < maxRows){
 		rows += 1;
 		var nutzerkennung = $("#id").val();
-		var zählerstand = $("data").val() + " kWh";
-
+		var zählerstand = $("#data").val() + " kWh";
 		if (nutzerkennung == "") {
 			alert("Geben Sie bitte eine Nutzerkennung ein");
 			return false;
@@ -54,11 +56,12 @@ function submiter(){
 			alert("Geben Sie bitte einen Zählerstand ein");
 			return false;
 		}
-		else{
-			addrow(nutzerkennung, zählerstand)
-		}
+		addrow(nutzerkennung, zählerstand);
 	}
-
-function rand (min, max) {
+	else{
+	}
+}
+//Gibt eine zufällige Zahl in einem Bereich zurück bis auf ein Komma genau
+function rand(min, max){
 	return parseFloat((Math.random() * (max-min)) + min).toFixed(1);
 }

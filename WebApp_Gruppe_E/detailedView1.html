@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
 
+<head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Jakob Feldmann">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./detailedScript.js" async></script>
-
 </head>
 
 <body>
-
 	<header>
 		<h1>Smart Meter 1</h1>
 	</header>
 
+	<!-- Navigation -->
 	<nav>
 		<ul>
 			<a href="index.html">Übersicht</a>
@@ -40,7 +39,7 @@
 
 
 	<form name="ablesen" onsubmit="submiter(); return false">
-		Nutzerkennung: <input type="text" name="id">  Zählerstand: <input type="text" name="data">
+		Nutzerkennung: <input type="text" id="id">  Zählerstand: <input type="text" id="data">
 		<input type="submit" value="Submit">
 	</form>
 
