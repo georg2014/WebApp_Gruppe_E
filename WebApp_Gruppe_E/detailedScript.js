@@ -20,7 +20,7 @@ $( document ).ready(function() {
 
 });
 
-//Referenziert die Tabelle, erstellt eine neue Zeile und befüllt di
+//Referenziert die Tabelle, erstellt eine neue Zeile und befüllt diese
 function addrow(nk, zs){
 	var table = document.getElementById("ablesungen");
 
@@ -42,7 +42,9 @@ function addrow(nk, zs){
 var maxRows = 10;
 var rows = 0;
 
-// Entnimmt Werte aus dem Formular und übergibt sie an den Zeilengenerator
+//Entnimmt Werte aus dem Formular und übergibt sie an den Zeilengenerator
+//Erkennt ob in jedes Feld etwas eingetragen wurde, gibt sonst einen Fehler aus
+//Löscht die Eingabefelder nach der Ausführung
 function submiter(){
 	if(rows < maxRows){
 		rows += 1;
