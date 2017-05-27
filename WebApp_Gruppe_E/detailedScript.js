@@ -18,7 +18,7 @@ $( document ).ready(function() {
 
 });
 
-//
+//Referenziert die Tabelle, erstellt eine neue Zeile und befüllt di
 function addrow(nk, zs){
 	var table = document.getElementById("ablesungen");
 
