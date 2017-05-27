@@ -50,7 +50,7 @@ nav{
 	justify-content: center;
 }
 
-/*Unterklasse der Gallerie in der die Bilder sind*/
+/*Kinder vom Typ div der Gallerie in der die Bilder sind*/
 .gallery > div {
 	margin:0;
 	position: relative;

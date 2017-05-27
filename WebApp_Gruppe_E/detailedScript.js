@@ -35,10 +35,9 @@ function addrow(nk, zs){
 	zelle1.innerHTML = nk;
 	zelle2.innerHTML = zs;
 	zelle3.innerHTML = datum;
-
 }
 
-//Max Anzahl Zeilen, damit die Tabelle nicht über die Seite hinaus geht
+//Max Anzahl Zeilen, damit die Tabelle nicht unter den Footer kommt(Footer ist nicht dynamisch)
 var maxRows = 10;
 var rows = 0;
 
