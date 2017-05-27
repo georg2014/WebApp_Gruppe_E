@@ -41,7 +41,6 @@ nav{
 
 /*Gallerie mit Übersichtsbildern*/
 .gallery {
-	Display
 	/*Display flex damit die Bilder nebeneinander angeordnet werden*/
 	display: flex;
 	width: 100%;
