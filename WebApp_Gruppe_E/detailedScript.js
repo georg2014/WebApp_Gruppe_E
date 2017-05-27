@@ -57,7 +57,7 @@ function submiter(){
 			return false;
 		}
 		addrow(nutzerkennung, zählerstand);
-		var form = document.getElementById("myForm");
+		var form = document.getElementById("ablesen");
 		form.reset();
 	}
 	else{
