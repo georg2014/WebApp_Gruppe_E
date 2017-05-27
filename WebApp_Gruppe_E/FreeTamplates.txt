@@ -1,4 +1,0 @@
-http://all-free-download.com/free-website-templates/free-templates-using-html-css-javascript.html
-
-Ein einfaches aber ausreichendes Git Tutorial:
-http://rogerdudler.github.io/git-guide/
