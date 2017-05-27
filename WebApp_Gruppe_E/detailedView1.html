@@ -15,7 +15,7 @@
 		<h1>Smart Meter 1</h1>
 	</header>
 
-	<!-- Navigation -->
+	<!-- Navigations Ansicht oben links-->
 	<nav>
 		<ul>
 			<a href="index.html">Übersicht</a>
@@ -23,6 +23,7 @@
 		</ul>
 	</nav>
 
+		<!-- Box für das Bild des Smart Meters -->
 		<div class="imageBox">
 			<img src="Bilder von Smart Metern\Smart Meter 1.jpg" alt="" width="300" height="500">
 			<p id="imgtxt1">
@@ -37,12 +38,13 @@
 			Max. Belastung: <span id= "maxA">89</span>A
 		</p>
 
-
+	<!-- Formular, dass zwei Eingaben annimmt und mit submit ein Skript zur Tabellenbefüllung startet  -->
 	<form name="ablesen" onsubmit="submiter(); return false">
 		Nutzerkennung: <input type="text" id="id">  Zählerstand: <input type="text" id="data">
 		<input type="submit" value="Submit">
 	</form>
 
+	<!-- Tabelle die mit passenden Werten befüllt wird-->
 	<table id="ablesungen">
 		<tr>
 			<th>Nutzerkennung</th>
@@ -51,6 +53,7 @@
 		</tr>
 	</table>
 
+	<!-- Fusszeile mit nützlichen Infos -->
 	<footer>
 		<p>Anwendungssysteme 1. Übungsaufgabe made by Leon Winkelmann, Jakob Feldmann, Jonas Schicke and Georg Stahn (Gruppe E)</p>
 	</footer>
