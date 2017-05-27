@@ -1,0 +1,35 @@
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    color: gray;
+}
+h1{
+	position: relative;
+	left: 40%;
+}
+span{
+	position: relative;
+	left: 40%;
+}
+p{
+	position: relative;
+	left: 40%;
+}
+body{
+	background:#81BEF7;
+}
+img{
+	position: relative;
+	left: 40%;
+	width: 234px;
+}
+input{
+	position: relative;
+	left: 40%;
+}
+div {
+position: relative;
+left: 40%;
+}
