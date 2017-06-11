@@ -7,14 +7,14 @@ $( document ).ready(function() {
 
 	//Werte werden im Bereich zufällig zugewiesen
 	var spannung = rand(220.0,240.0);
-	var stromstärke = rand(50.0,100.0);
+	var stromstärke =  rand(0.0, maxStromstärke+5.0);
 
 	//Werte in HTML übertragen
 	$("#spannung").text(spannung);
 	$("#stromstärke").text(stromstärke);
 
 	//Vergleicht aktuellen Wert mit dem Maximum an Belastung
-	if(stromstärke>maxStromstärke+5){
+	if(stromstärke>maxStromstärke){
 		alert("Die maximale Stromstärke wird überschritten!");
 	}
 
